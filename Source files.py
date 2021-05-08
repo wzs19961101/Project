@@ -2,7 +2,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 
-
+is_link = 'https://finance.yahoo.com/quote/AAPL/financials?p=AAPL'
+bs_link = 'https://finance.yahoo.com/quote/AAPL/balance-sheet?p=AAPL'
 cf_link = 'https://finance.yahoo.com/quote/AAPL/cash-flow?p=AAPL'
 
 from selenium import webdriver
