@@ -19,7 +19,7 @@ options.add_argument('lang=en_US')
 browser = webdriver.Chrome(chrome_options= options)
 
 #browser = webdriver.Chrome()
-# browser.maximize_window() # 最大化
+# browser.maximize_window() # 
 browser.get(url)
 browser.implicitly_wait(10)
 
@@ -37,7 +37,7 @@ print('hero    win rate')
 for button in buttons:
     # click button
     browser.execute_script("arguments[0].click();", button)
-    # 寻找表格的最左列
+    # to find the left part of the table
     wait = ui.WebDriverWait(browser, wait_time)
     try:
         wait.until(
